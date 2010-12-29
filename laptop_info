@@ -1,0 +1,25 @@
+DMIPATH=/sys/class/dmi/id
+
+laptop_info()
+{
+	board=`cat $DMIPATH/product_name`
+	case "$board" in
+		*)
+			# nothing to do now
+			;;
+	esac
+
+	return 1 # auto_detect
+}
+
+detect_hardware()
+{
+	case "`cat $DMIPATH/uevent`" in
+		*ASUSTeK*)
+			laptop_info
+			;;
+		*)
+			error WARNING: Not an ASUS product
+			;;
+	esac
+}
