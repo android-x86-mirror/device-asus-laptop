@@ -4,8 +4,11 @@ laptop_info()
 {
 	board=`cat $DMIPATH/product_name`
 	case "$board" in
+		EP121*)
+			BOARD_USES_TSLIB=true
+			EXTMOD="$EXTMOD eeepc-wmi"
+			;;
 		*)
-			# nothing to do now
 			;;
 	esac
 
