@@ -5,7 +5,7 @@ laptop_info()
 	board=`cat $DMIPATH/product_name`
 	case "$board" in
 		EP121*)
-			BOARD_USES_TSLIB=true
+			EXTMOD="$EXTMOD hid-multitouch"
 			;;
 		*)
 			;;
