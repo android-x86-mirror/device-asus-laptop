@@ -25,3 +25,15 @@ detect_hardware()
 			;;
 	esac
 }
+
+post_detect()
+{
+	board=`cat $DMIPATH/product_name`
+	case "$board" in
+		EP121*)
+			echo 3 0eef a001 0 > /sys/module/hid_multitouch/drivers/hid:hid-multitouch/new_id
+			;;
+		*)
+			;;
+	esac
+}
