@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
-# Linux/x86 2.6.39 Kernel Configuration
-# Mon Aug  8 22:30:49 2011
+# Linux/x86 2.6.39.4 Kernel Configuration
+# Thu Aug 18 10:30:51 2011
 #
 # CONFIG_64BIT is not set
 CONFIG_X86_32=y
@@ -752,8 +752,51 @@ CONFIG_BLK_DEV_RAM_SIZE=4096
 # CONFIG_BLK_DEV_HD is not set
 # CONFIG_BLK_DEV_RBD is not set
 # CONFIG_SENSORS_LIS3LV02D is not set
-# CONFIG_MISC_DEVICES is not set
+CONFIG_MISC_DEVICES=y
+# CONFIG_AD525X_DPOT is not set
+# CONFIG_ANDROID_PMEM is not set
+# CONFIG_IBM_ASM is not set
+# CONFIG_PHANTOM is not set
+# CONFIG_SGI_IOC4 is not set
+# CONFIG_TIFM_CORE is not set
+# CONFIG_ICS932S401 is not set
+# CONFIG_ENCLOSURE_SERVICES is not set
+# CONFIG_KERNEL_DEBUGGER_CORE is not set
+# CONFIG_CS5535_MFGPT is not set
+# CONFIG_HP_ILO is not set
+# CONFIG_APDS9802ALS is not set
+# CONFIG_ISL29003 is not set
+# CONFIG_ISL29020 is not set
+# CONFIG_SENSORS_TSL2550 is not set
+# CONFIG_SENSORS_BH1780 is not set
+# CONFIG_SENSORS_BH1770 is not set
+# CONFIG_SENSORS_APDS990X is not set
+# CONFIG_HMC6352 is not set
+# CONFIG_SENSORS_AK8975 is not set
+# CONFIG_DS1682 is not set
+# CONFIG_UID_STAT is not set
+# CONFIG_VMWARE_BALLOON is not set
+# CONFIG_BMP085 is not set
+# CONFIG_PCH_PHUB is not set
+# CONFIG_WL127X_RFKILL is not set
+# CONFIG_APANIC is not set
+# CONFIG_C2PORT is not set
+
+#
+# EEPROM support
+#
+# CONFIG_EEPROM_AT24 is not set
+# CONFIG_EEPROM_LEGACY is not set
+# CONFIG_EEPROM_MAX6875 is not set
 CONFIG_EEPROM_93CX6=m
+# CONFIG_CB710_CORE is not set
+# CONFIG_IWMC3200TOP is not set
+
+#
+# Texas Instruments shared transport line discipline
+#
+# CONFIG_TI_ST is not set
+# CONFIG_SENSORS_LIS3_I2C is not set
 CONFIG_HAVE_IDE=y
 # CONFIG_IDE is not set
 
@@ -2305,7 +2348,8 @@ CONFIG_STAGING=y
 # CONFIG_R8187SE is not set
 # CONFIG_RTL8192U is not set
 # CONFIG_RTL8192E is not set
-# CONFIG_R8712U is not set
+CONFIG_R8712U=m
+CONFIG_R8712_AP=y
 # CONFIG_RTS_PSTOR is not set
 # CONFIG_TRANZPORT is not set
 
