@@ -1,7 +1,8 @@
 PRODUCT_PACKAGES := $(THIRD_PARTY_APPS)
 
 PRODUCT_COPY_FILES := \
-    frameworks/base/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
+    $(LOCAL_PATH)/eGestured:system/bin/eGestured \
+    $(SRC_TARGET_DIR)/board/generic_x86/GenericTouch.idc:system/usr/idc/Vendor_0eef_Product_a001_Version_0210.idc
 
 $(call inherit-product,$(SRC_TARGET_DIR)/product/generic_x86.mk)
 
